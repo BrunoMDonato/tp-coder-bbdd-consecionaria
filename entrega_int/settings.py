@@ -55,7 +55,7 @@ ROOT_URLCONF = 'entrega_int.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\Bruno Donato\Desktop\Primera Entrega\entrega_int\tp_coder\templates\tp_coder'],
+        'DIRS': [r'C:\Users\Bruno Donato\Desktop\Primera Entrega - copia\tp_coder\tp_coder\templates\tp_coder'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

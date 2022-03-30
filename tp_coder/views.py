@@ -35,7 +35,7 @@ def motoc(request):
 
     if request.method == 'POST':
         formulario =  Form_motos(request.POST)
-        print(formulario)
+        
         if formulario.is_valid():
             datos = formulario.cleaned_data
 
@@ -71,7 +71,10 @@ def vend_(request):
         formulario = Forms_vend
         return render (request, 'tp_coder/vended.html')
 
-def busqueda(request):
-    return render (request, 'busqued.html')
 
+
+def busqueda(request):
+
+
+    return render (request, 'busqued.html')
 

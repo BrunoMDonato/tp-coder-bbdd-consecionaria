@@ -2,7 +2,13 @@
 
 {% block contenido_pp %}
 
+<form action="/tp_coder/vendedores/" method="POST">
+    {% csrf_token %}
+    <p>ID Vendedor: <input type="number" name="id_vend"></p>
+    <p>Nombre: <input type="text" name="nombre"></p>
 
+    <input type="submit" value="Cargar Vehiculo">
+</form>
 
 
 {% endblock contenido_pp %}

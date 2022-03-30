@@ -2,12 +2,15 @@
 
 {% block contenido_pp %}
 
-<form action="tp_coder/automoviles/" method="POST">
+
+
+<form action="/tp_coder/automoviles/" method="POST">
     {% csrf_token %}
-    <p>Modelo: <input type="text" name="modelo"></p>
+    <p>Chasis: <input type="number" name="chasis"></p> 
     <p>Marca: <input type="text" name="marca"></p>
-    <p>KMS: <input type="number" name="KMS"></p>
-    <p>Año: <input type="number" name="año"></p>
+    <p>Modelo: <input type="text" name="modelo"></p>
+    <p>KMS: <input type="number" name="kms"></p>
+    <p>Año: <input type="number" name="anio"></p>
 
     <input type="submit" value="Cargar Vehiculo">
 </form>

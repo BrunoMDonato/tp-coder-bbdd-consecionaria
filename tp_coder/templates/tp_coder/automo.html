@@ -1,0 +1,17 @@
+{% extends 'tp_coder/base.html' %}
+
+{% block contenido_pp %}
+
+<form action="tp_coder/automoviles/" method="POST">
+    {% csrf_token %}
+    <p>Modelo: <input type="text" name="modelo"></p>
+    <p>Marca: <input type="text" name="marca"></p>
+    <p>KMS: <input type="number" name="KMS"></p>
+    <p>Año: <input type="number" name="año"></p>
+
+    <input type="submit" value="Cargar Vehiculo">
+</form>
+
+
+
+{% endblock contenido_pp %}

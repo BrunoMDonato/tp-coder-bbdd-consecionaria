@@ -4,7 +4,7 @@ from tp_coder.views import *
 
 urlpatterns = [
     path('', inicio, name='Inicio'),
-    path('automoviles/', automov, name='Automoviles'),
+    path('automoviles/', form_automov, name='Automoviles'),
     path('motocicletas/', motoc, name='Motos'),
     path('vendedores/', vend_, name='Vendedores'),
     path('busqueda/', busqueda, name='Buscar'),

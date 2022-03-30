@@ -13,5 +13,5 @@ class Form_motos(forms.Form):
     anio = forms.IntegerField()
 
 class Forms_vend(forms.Form):
-    id_vend = forms.IntegerField(primary_key=True)
+    id_vend = forms.IntegerField()
     nombre = forms.CharField(max_length=20)

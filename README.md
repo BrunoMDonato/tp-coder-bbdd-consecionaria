@@ -1,6 +1,6 @@
 # TP_Coder: Base de datos
 
-Base de datos para una conscecionaria, donde se pueden cargar autos y motos, con sus respectivas caracteristicas 
+Base de datos para una concecionaria, donde se pueden cargar autos y motos, con sus respectivas caracteristicas 
 
 (Marca - Modelo - kms - Año)
 

@@ -1,9 +1,51 @@
-# TP_Coder: Base de datos
+## TP_Coder: Base de datos para concesionaria
 
-Base de datos para una concecionaria, donde se pueden cargar autos y motos, con sus respectivas caracteristicas 
+Este proyecto es una aplicación web desarrollada con **Django** que permite gestionar una base de datos de una concesionaria de autos y motos. Se pueden cargar vehículos con sus respectivas características, así como también administrar vendedores y usuarios que interactúan con la aplicación.
 
-(Marca - Modelo - kms - Año)
+## Características
 
-Tambien incluye un id para cada vendedor o usuario que interactue con la app
+- Registro de vehículos con:
+  - **Marca**
+  - **Modelo**
+  - **Kilometraje**
+  - **Año**
+  - **Chasis**
+- Administración de vendedores y usuarios.
+- Base de datos en **SQLite3**.
+- Interfaz de usuario para la gestión de los datos.
 
-(es necesario actualizar, dentro de 'settings.py' la ruta de la carpeta 'Template' para que funcione correctamente)
+## Configuración y Ejecución
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/tuusuario/tu-repo.git
+cd tu-repo
+```
+
+### 2. Crear y activar un entorno virtual
+```bash
+python -m venv env
+env\Scripts\activate  # En Windows
+source env/bin/activate  # En macOS/Linux
+```
+
+### 3. Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Aplicar migraciones
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 5. Ejecutar el servidor
+```bash
+python manage.py runserver
+```
+
+## Notas Importantes
+- **Es necesario actualizar en `settings.py` la ruta de la carpeta `Templates` para que funcione correctamente.**
+- Asegurarse de que el archivo `db.sqlite3` se encuentra en la raíz del proyecto antes de ejecutar las migraciones.
+

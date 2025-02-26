@@ -29,18 +29,13 @@ env\Scripts\activate  # En Windows
 source env/bin/activate  # En macOS/Linux
 ```
 
-### 3. Instalar dependencias
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Aplicar migraciones
+### 3. Aplicar migraciones
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5. Ejecutar el servidor
+### 4. Ejecutar el servidor
 ```bash
 python manage.py runserver
 ```
